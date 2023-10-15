@@ -2,7 +2,8 @@ import pygame,sys
 import random
 import time
 
-#python setup
+#this is a change
+#python Setup
 screen_width = 1280
 screen_height = 720
 pygame.init()
