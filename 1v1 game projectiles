@@ -32,10 +32,10 @@ screen.blit(player2_text2, (790,100))
 screen.blit(player2_text3, (720,130))
 screen.blit(player2_text4, (680,160))
 
-bkImg = pygame.image.load('1v1-game-v2/sprites/zuko_p1card.png') #loads image into pygame
+bkImg = pygame.image.load('sprites/zuko_p1card.png') #loads image into pygame
 screen.blit(bkImg, (300, 200)) #displays image on surface
 
-bkImg = pygame.image.load('1v1-game-v2/sprites/zuko_p2card.png') #loads image into pygame
+bkImg = pygame.image.load('sprites/zuko_p2card.png') #loads image into pygame
 screen.blit(bkImg, (700, 200)) #displays image on surface
 optionp1 = 1
 optionp2 = 1
@@ -58,7 +58,7 @@ while game_beginp1 == False or game_beginp2 == False:
                         if optionp1 >= 7:
                             optionp1 = 1
             else:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/ready_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/ready_card.png') #loads image into pygame
                 screen.blit(bkImg, (370, 30)) #displays image on surface
             if game_beginp2 == False:
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_LEFT:
@@ -70,26 +70,26 @@ while game_beginp1 == False or game_beginp2 == False:
                         if optionp2 >= 7:
                             optionp2 = 1
             else:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/ready_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/ready_card.png') #loads image into pygame
                 screen.blit(bkImg, (770, 30)) #displays image on surface
                     
             if optionp1 == 1:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/zuko_p1card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/zuko_p1card.png') #loads image into pygame
                 screen.blit(bkImg, (300, 200)) #displays image on surface
             elif optionp1 == 2:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/katara_p1card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/katara_p1card.png') #loads image into pygame
                 screen.blit(bkImg, (300, 200)) #displays image on surface
             elif optionp1 == 3:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/aang_p1card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/aang_p1card.png') #loads image into pygame
                 screen.blit(bkImg, (300, 200)) #displays image on surface
             elif optionp1 == 4:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/toph_p1card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/toph_p1card.png') #loads image into pygame
                 screen.blit(bkImg, (300, 200)) #displays image on surface
             elif optionp1 == 5:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/sokka_p1card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/sokka_p1card.png') #loads image into pygame
                 screen.blit(bkImg, (300, 200)) #displays image on surface
             elif optionp1 == 6:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/random_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/random_card.png') #loads image into pygame
                 screen.blit(bkImg, (300, 200)) #displays image on surface
                 
             if event.type == pygame.KEYDOWN and event.key == pygame.K_w:
@@ -112,22 +112,22 @@ while game_beginp1 == False or game_beginp2 == False:
 
 
             if optionp2 == 1:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/zuko_p2card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/zuko_p2card.png') #loads image into pygame
                 screen.blit(bkImg, (700, 200)) #displays image on surface
             elif optionp2 == 2:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/katara_p2card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/katara_p2card.png') #loads image into pygame
                 screen.blit(bkImg, (700, 200)) #displays image on surface
             elif optionp2 == 3:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/aang_p2card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/aang_p2card.png') #loads image into pygame
                 screen.blit(bkImg, (700, 200)) #displays image on surface
             elif optionp2 == 4:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/toph_p2card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/toph_p2card.png') #loads image into pygame
                 screen.blit(bkImg, (700, 200)) #displays image on surface
             elif optionp2 == 5:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/sokka_p2card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/sokka_p2card.png') #loads image into pygame
                 screen.blit(bkImg, (700, 200)) #displays image on surface
             elif optionp2 == 6:
-                bkImg = pygame.image.load('1v1-game-v2/sprites/random_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/random_card.png') #loads image into pygame
                 screen.blit(bkImg, (700, 200)) #displays image on surface
                 
             if event.type == pygame.KEYDOWN and event.key == pygame.K_UP:
@@ -170,32 +170,32 @@ while map_begin == False:
             if optionmap == 1:
                 selector_map = 1
                 screen.fill('white')
-                bkImg = pygame.image.load('1v1-game-v2/sprites/the_map_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/the_map_card.png') #loads image into pygame
                 screen.blit(bkImg, (500, 200)) #displays image on surface
             elif optionmap == 2:
                 selector_map = 2
                 screen.fill('white')
-                bkImg = pygame.image.load('1v1-game-v2/sprites/deathmatch_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/deathmatch_card.png') #loads image into pygame
                 screen.blit(bkImg, (500, 200)) #displays image on surface
             elif optionmap == 3:
                 selector_map = 3
                 screen.fill('white')
-                bkImg = pygame.image.load('1v1-game-v2/sprites/bonk_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/bonk_card.png') #loads image into pygame
                 screen.blit(bkImg, (500, 200)) #displays image on surface
             elif optionmap == 4:
                 selector_map = 4
                 screen.fill('white')
-                bkImg = pygame.image.load('1v1-game-v2/sprites/dualarena_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/dualarena_card.png') #loads image into pygame
                 screen.blit(bkImg, (500, 200)) #displays image on surface
             elif optionmap == 5:
                 selector_map = 5
                 screen.fill('white')
-                bkImg = pygame.image.load('1v1-game-v2/sprites/platform_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/platform_card.png') #loads image into pygame
                 screen.blit(bkImg, (500, 200)) #displays image on surface
             elif optionmap == 6:
                 selector_map = 6
                 screen.fill('white')
-                bkImg = pygame.image.load('1v1-game-v2/sprites/random_card.png') #loads image into pygame
+                bkImg = pygame.image.load('sprites/random_card.png') #loads image into pygame
                 screen.blit(bkImg, (500, 200)) #displays image on surface
             map_text1 = title.render('Map Selector', False, (0, 0, 0))
             screen.blit(map_text1, (545,100))
@@ -368,106 +368,106 @@ elif map == 3:
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',]    
 elif map == 4:
+    #camilos
     
     level_map = ['XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'XXXXXXXXXXXXXXXXXXXXXXXXX                              XXXXXXXXXXXXXXXXXXXXXXXXX',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                 X',
+    'X                                                            X                 X',
+    'X                                                            X                 X',
+    'X                                                            X                 X',
+    'X                                                            X                 X',
+    'X                                                            X                 X',
+    'X                                                            X                 X',
+    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                 X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X              XXXXXXXXXXXXXXXXXX                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    'X                               X                                              X',
+    'X                               X                                              X',
+    'X                               X                                              X',
+    'X                               X                                              X',
+    'X                               X                                              X',
+    'X                               X                                              X',
+    'X              XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    'X                                                                              X',
+    'X   P                                                                       T  X',
+    'X                                                                              X',
+    'X                                                                              X',
+    'X                                                                              X',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X          XXXXXXXXXXXXXXXXXXXXXXX            XXXXXXXXXXXXXXXXXXXXXXX          X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X                                                                              X',
-    'XXXXXXXXXXX                                                          XXXXXXXXXXX',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X     P                                                                 T      X',
-    'X                      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                      X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'XXXXXXXXXXX                                                          XXXXXXXXXXX',
-    'X                                                                              X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X                      X                                X                      X',
-    'X          XXXXXXXXXXXXXXXXXXXXXXX            XXXXXXXXXXXXXXXXXXXXXXX          X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',]   
 elif map == 5:
-    #platform
+    #spiral
     level_map = [
         'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     'X                                                                              X',
     'X                                                                              X',
     'X                                                                              X',
     'X                                                                              X',
     'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                          XXXXXXXXXXXXXXXXXXXXXXXXXX                          X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X                                                                              X',
-    'X      P                                                              T        X',
-    'X                                                                              X',
-    'X                                                                              X',
+    'X       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            X',
+    'X       X                                                         X            X',
+    'X       X                                                         X            X',
+    'X       X                                                         X            X',
+    'X       X                                                         X            X',
+    'X       X                                                         X            X',
+    'X       X                                                         XX           X',
+    'X       X            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'XX      X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                    T                       X            X',
+    'X       X            X                                            X            X',
+    'X       X            X        XXXXXXXXXXXXXXXXXXXXXXXXXXXX        X            X',
+    'X       XX           X                                            XX           X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'XX      X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            X                                            X            X',
+    'X       X            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX            X',
+    'X       X                                                                      X',
+    'X   P   X                                                                      X',
+    'X       X                                                                      X',
+    'X       X                                                                      X',
+    'X       X                                                                      X',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',]
-
 
 tile_size = 16
 screen_width = 1280
@@ -477,6 +477,21 @@ screen_height = len(level_map)*tile_size
 #-------------------------------------------------------------------------------PLAYERS
 player_size = 20
 jump_height = -4.5
+
+class Square(pygame.sprite.Sprite):
+  def __init__(self, col, x, y):
+    pygame.sprite.Sprite.__init__(self)
+    self.image = pygame.Surface((50, 50))
+    self.image.fill(col)
+    self.rect = self.image.get_rect()
+    self.rect.center = (x, y)
+    
+#create sprite group for squares
+squares = pygame.sprite.Group()
+
+#create square and add to squares group
+square = Square("purple", 500, 300)
+squares.add(square)
 
 class Player(pygame.sprite.Sprite):
     def __init__(self,x,y,plr_num):
@@ -497,36 +512,36 @@ class Player(pygame.sprite.Sprite):
         
         if plr_num == 1:
             if optionp1 == 1:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/zuko.png')
+                image_to_load = pygame.image.load('sprites/zuko.png')
                 self.speed = 9
             elif optionp1 == 2:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/katara.png')
+                image_to_load = pygame.image.load('sprites/katara.png')
                 self.speed = 8.5
             elif optionp1 == 3:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/aang.png')
+                image_to_load = pygame.image.load('sprites/aang.png')
                 self.speed = 10
             elif optionp1 == 4:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/toph.png')
+                image_to_load = pygame.image.load('sprites/toph.png')
                 self.speed = 8
             elif optionp1 == 5:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/sokka.png')
+                image_to_load = pygame.image.load('sprites/sokka.png')
                 self.speed = 9.5
             self.image.blit(image_to_load,(0,0))
         elif plr_num == 2:
             if optionp2 == 1:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/zuko_frame2.png')
+                image_to_load = pygame.image.load('sprites/zuko_frame2.png')
                 self.speed = 9
             elif optionp2 == 2:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/katara_frame2.png')
+                image_to_load = pygame.image.load('sprites/katara_frame2.png')
                 self.speed = 8.5
             elif optionp2 == 3:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/aang_frame2.png')
+                image_to_load = pygame.image.load('sprites/aang_frame2.png')
                 self.speed = 10
             elif optionp2 == 4:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/toph_frame2.png')
+                image_to_load = pygame.image.load('sprites/toph_frame2.png')
                 self.speed = 8
             elif optionp2 == 5:
-                image_to_load = pygame.image.load('1v1-game-v2/sprites/sokka_frame2.png')
+                image_to_load = pygame.image.load('sprites/sokka_frame2.png')
                 self.speed = 9.5
         self.image.blit(image_to_load,(0,0))
         self.image.set_colorkey('purple')
@@ -538,28 +553,28 @@ class Player(pygame.sprite.Sprite):
             if keys[pygame.K_a]:
                 self.direction.x = -1
                 if optionp1 == 1:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/zuko_frame2.png')
+                    image_to_load = pygame.image.load('sprites/zuko_frame2.png')
                 elif optionp1 == 2:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/katara_frame2.png')
+                    image_to_load = pygame.image.load('sprites/katara_frame2.png')
                 elif optionp1 == 3:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/aang_frame2.png')
+                    image_to_load = pygame.image.load('sprites/aang_frame2.png')
                 elif optionp1 == 4:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/toph_frame2.png')
+                    image_to_load = pygame.image.load('sprites/toph_frame2.png')
                 elif optionp1 == 5:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/sokka_frame2.png')
+                    image_to_load = pygame.image.load('sprites/sokka_frame2.png')
                 self.image.blit(image_to_load,(0,0))
             elif keys[pygame.K_d]:
                 self.direction.x = 1
                 if optionp1 == 1:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/zuko.png')
+                    image_to_load = pygame.image.load('sprites/zuko.png')
                 elif optionp1 == 2:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/katara.png')
+                    image_to_load = pygame.image.load('sprites/katara.png')
                 elif optionp1 == 3:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/aang.png')
+                    image_to_load = pygame.image.load('sprites/aang.png')
                 elif optionp1 == 4:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/toph.png')
+                    image_to_load = pygame.image.load('sprites/toph.png')
                 elif optionp1 == 5:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/sokka.png')
+                    image_to_load = pygame.image.load('sprites/sokka.png')
                 self.image.blit(image_to_load,(0,0))
             else:
                 self.direction.x = 0
@@ -572,28 +587,28 @@ class Player(pygame.sprite.Sprite):
             if keys[pygame.K_LEFT]:
                 self.direction.x = -1
                 if optionp2 == 1:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/zuko_frame2.png')
+                    image_to_load = pygame.image.load('sprites/zuko_frame2.png')
                 elif optionp2 == 2:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/katara_frame2.png')
+                    image_to_load = pygame.image.load('sprites/katara_frame2.png')
                 elif optionp2 == 3:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/aang_frame2.png')
+                    image_to_load = pygame.image.load('sprites/aang_frame2.png')
                 elif optionp2 == 4:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/toph_frame2.png')
+                    image_to_load = pygame.image.load('sprites/toph_frame2.png')
                 elif optionp2 == 5:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/sokka_frame2.png')
+                    image_to_load = pygame.image.load('sprites/sokka_frame2.png')
                 self.image.blit(image_to_load,(0,0))
             elif keys[pygame.K_RIGHT]:
                 self.direction.x = 1
                 if optionp2 == 1:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/zuko.png')
+                    image_to_load = pygame.image.load('sprites/zuko.png')
                 elif optionp2 == 2:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/katara.png')
+                    image_to_load = pygame.image.load('sprites/katara.png')
                 elif optionp2 == 3:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/aang.png')
+                    image_to_load = pygame.image.load('sprites/aang.png')
                 elif optionp2 == 4:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/toph.png')
+                    image_to_load = pygame.image.load('sprites/toph.png')
                 elif optionp2 == 5:
-                    image_to_load = pygame.image.load('1v1-game-v2/sprites/sokka.png')
+                    image_to_load = pygame.image.load('sprites/sokka.png')
                 self.image.blit(image_to_load,(0,0))
             else:
                 self.direction.x = 0
@@ -697,16 +712,35 @@ level = Level(level_map,screen)
 
 
 while True:
+    squares.update()
+
+    #draw sprite group
+    squares.draw(screen)
+
+    #event handler
+    xpos = 0
+    ypos = 0
+    print('1')
     keys = pygame.key.get_pressed()
     for event in pygame.event.get():
+        if keys[pygame.K_q]:
+            #get coordinates
+            xpos += random.randint(1,1000)
+            ypos += random.randint(1,700)
+            #create square
+            square2 = Square("purple", xpos,ypos)
+            squares.add(square2)
+            print('2')
+        print('3')
         if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
+                    print('4')
                     pygame.quit()
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
+                    sys.exit()       
+    print('5')
             
     screen.fill("gray50")
     level.run()
     
     pygame.display.update()
     clock.tick(60)
+    
